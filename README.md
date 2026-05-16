@@ -17,16 +17,16 @@ Test suite นี้ครอบคลุมกระบวนการหลั
 ### E2E Order Successfully
 E2E Order Successfully
     [Documentation]    This test case verifies that a user can place an order successfully.
-    Open Browser To Login Page
-    Login With Valid Credentials
-    Select Product
-    Review Cart
-    Checkout
-    Input Checkout Information
-    Verify Product Information
-    Completed Order
-    Logout
-    Close Browser
+    - Open Browser To Login Page
+    - Login With Valid Credentials
+    - Select Product
+    - Review Cart
+    - Checkout
+    - Input Checkout Information
+    - Verify Product Information
+    - Completed Order
+    - Logout
+    - Close Browser
 
 ## 🚀 How to Run Tests
 ### 1. Install requirements
