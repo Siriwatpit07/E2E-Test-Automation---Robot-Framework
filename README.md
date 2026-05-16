@@ -37,10 +37,3 @@ pip install -r requirements.txt
 ### 2. Run Test Suite
 ```bash
 robot -d results tests/
-```
-
-Output จะถูกเก็บไว้ในโฟลเดอร์:
-results/
- ├── log.html
- ├── report.html
- └── output.xml
