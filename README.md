@@ -1,17 +1,17 @@
 # E2E Test Automation - Robot Framework
 
-โปรเจกต์นี้เป็นชุดทดสอบแบบ **End-to-End (E2E)** สำหรับการสั่งซื้อสินค้า (Order Flow) โดยใช้ **Robot Framework** เพื่อทดสอบ flow การทำงานตั้งแต่ Login → เลือกสินค้า → Checkout → จนถึง Logout
+This project is a set of End-to-End (E2E) tests for an order flow, using Robot Framework to validate the system workflow from Login → Product Selection → Checkout → Logou
 
 ## Project Overview
-Test suite นี้ครอบคลุมกระบวนการหลักของระบบ E-commerce:
-- Login เข้าสู่ระบบ
-- เลือกสินค้า
-- ตรวจสอบตะกร้า (Cart)
-- ทำการ Checkout
-- กรอกข้อมูลผู้ใช้
-- ตรวจสอบข้อมูลสินค้าและราคา
-- ยืนยันการสั่งซื้อ
-- Logout จากระบบ
+- This test suite covers the main E-commerce system flow:
+- User Login
+- Product Selection
+- Cart Review
+- Checkout Process
+- Enter User Information
+- Verify Product and Price Details
+- Order Confirmation
+- Logout from the system
 
 ##  Test Case
 ### E2E Order Successfully
@@ -28,7 +28,7 @@ E2E Order Successfully
 - Logout
 - Close Browser
 
-## 🚀 How to Run Tests
+## How to Run Tests
 ### 1. Install requirements
 ```bash
 pip install -r requirements.txt
@@ -36,4 +36,4 @@ pip install -r requirements.txt
 
 ### 2. Run Test Suite
 ```bash
-robot -d results tests/
+py -m robot -d results tests/
