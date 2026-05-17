@@ -1,393 +1,195 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.13.2 on win32)" generated="2026-05-16T22:07:26.686767" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.2 (Python 3.13.2 on win32)" generated="2026-05-17T09:52:39.147062" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="D:\E2E-Test-Automation---Robot-Framework\tests">
-<suite id="s1-s1" name="Tc Order Successfully" source="D:\E2E-Test-Automation---Robot-Framework\tests\tc_order_successfully.robot">
+<suite id="s1-s1" name="Saucedemo" source="D:\E2E-Test-Automation---Robot-Framework\tests\saucedemo.robot">
 <test id="s1-s1-t1" name="E2E Order Successfully" line="11">
 <kw name="Open Browser To Login Page" owner="login_keywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-05-16T22:07:27.067887" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<msg time="2026-05-17T09:52:39.474579" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<msg time="2026-05-17T09:52:39.870778" level="WARN">There was an error managing chromedriver (error sending request for url (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json)); using driver found in the cache</msg>
+<msg time="2026-05-17T09:52:39.871121" level="WARN">Error sending stats to Plausible: error sending request for url (https://plausible.io/api/event)</msg>
+<msg time="2026-05-17T09:52:42.446366" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-05-17T09:52:42.446618" level="FAIL">WebDriverException: Message: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=148.0.7778.168)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff646201e35+2e8d45]
+	chromedriver!GetHandleVerifier [0x7ff645f2e6c0+155d0]
+	chromedriver!(No symbol) [0x7ff645c7d57d]
+	chromedriver!(No symbol) [0x7ff645c7a0a4]
+	chromedriver!(No symbol) [0x7ff645c6a491]
+	chromedriver!(No symbol) [0x7ff645c6c37f]
+	chromedriver!(No symbol) [0x7ff645c6aa33]
+	chromedriver!(No symbol) [0x7ff645c6a1fb]
+	chromedriver!(No symbol) [0x7ff645c69eb1]
+	chromedriver!(No symbol) [0x7ff645c67afb]
+	chromedriver!(No symbol) [0x7ff645c68242]
+	chromedriver!(No symbol) [0x7ff645c81836]
+	chromedriver!(No symbol) [0x7ff645d25a74]
+	chromedriver!(No symbol) [0x7ff645cffe6a]
+	chromedriver!(No symbol) [0x7ff645d24c63]
+	chromedriver!(No symbol) [0x7ff645cc9d58]
+	chromedriver!(No symbol) [0x7ff645ccac43]
+	chromedriver!GetHandleVerifier [0x7ff64622dab9+3149c9]
+	chromedriver!GetHandleVerifier [0x7ff64622802b+30ef3b]
+	chromedriver!GetHandleVerifier [0x7ff64624c872+333782]
+	chromedriver!GetHandleVerifier [0x7ff645f4b785+32695]
+	chromedriver!GetHandleVerifier [0x7ff645f542bc+3b1cc]
+	chromedriver!GetHandleVerifier [0x7ff645f37f24+1ee34]
+	chromedriver!GetHandleVerifier [0x7ff645f380b4+1efc4]
+	chromedriver!GetHandleVerifier [0x7ff645f1bf27+2e37]
+	KERNEL32!BaseThreadInitThunk [0x7ffa95c9259d+1d]
+	ntdll!RtlUserThreadStart [0x7ffa9772af78+28]
+</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <arg>options=add_argument("--incognito")</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-05-16T22:07:27.067655" elapsed="1.936645"/>
+<status status="FAIL" start="2026-05-17T09:52:39.474358" elapsed="3.032044">WebDriverException: Message: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=148.0.7778.168)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff646201e35+2e8d45]
+	chromedriver!GetHandleVerifier [0x7ff645f2e6c0+155d0]
+	chromedriver!(No symbol) [0x7ff645c7d57d]
+	chromedriver!(No symbol) [0x7ff645c7a0a4]
+	chromedriver!(No symbol) [0x7ff645c6a491]
+	chromedriver!(No symbol) [0x7ff645c6c37f]
+	chromedriver!(No symbol) [0x7ff645c6aa33]
+	chromedriver!(No symbol) [0x7ff645c6a1fb]
+	chromedriver!(No symbol) [0x7ff645c69eb1]
+	chromedriver!(No symbol) [0x7ff645c67afb]
+	chromedriver!(No symbol) [0x7ff645c68242]
+	chromedriver!(No symbol) [0x7ff645c81836]
+	chromedriver!(No symbol) [0x7ff645d25a74]
+	chromedriver!(No symbol) [0x7ff645cffe6a]
+	chromedriver!(No symbol) [0x7ff645d24c63]
+	chromedriver!(No symbol) [0x7ff645cc9d58]
+	chromedriver!(No symbol) [0x7ff645ccac43]
+	chromedriver!GetHandleVerifier [0x7ff64622dab9+3149c9]
+	chromedriver!GetHandleVerifier [0x7ff64622802b+30ef3b]
+	chromedriver!GetHandleVerifier [0x7ff64624c872+333782]
+	chromedriver!GetHandleVerifier [0x7ff645f4b785+32695]
+	chromedriver!GetHandleVerifier [0x7ff645f542bc+3b1cc]
+	chromedriver!GetHandleVerifier [0x7ff645f37f24+1ee34]
+	chromedriver!GetHandleVerifier [0x7ff645f380b4+1efc4]
+	chromedriver!GetHandleVerifier [0x7ff645f1bf27+2e37]
+	KERNEL32!BaseThreadInitThunk [0x7ffa95c9259d+1d]
+	ntdll!RtlUserThreadStart [0x7ffa9772af78+28]
+</status>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-05-16T22:07:29.004516" elapsed="0.030565"/>
+<status status="NOT RUN" start="2026-05-17T09:52:42.506626" elapsed="0.000032"/>
 </kw>
-<status status="PASS" start="2026-05-16T22:07:27.067034" elapsed="1.968161"/>
+<status status="FAIL" start="2026-05-17T09:52:39.473757" elapsed="3.033027">WebDriverException: Message: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=148.0.7778.168)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff646201e35+2e8d45]
+	chromedriver!GetHandleVerifier [0x7ff645f2e6c0+155d0]
+	chromedriver!(No symbol) [0x7ff645c7d57d]
+	chromedriver!(No symbol) [0x7ff645c7a0a4]
+	chromedriver!(No symbol) [0x7ff645c6a491]
+	chromedriver!(No symbol) [0x7ff645c6c37f]
+	chromedriver!(No symbol) [0x7ff645c6aa33]
+	chromedriver!(No symbol) [0x7ff645c6a1fb]
+	chromedriver!(No symbol) [0x7ff645c69eb1]
+	chromedriver!(No symbol) [0x7ff645c67afb]
+	chromedriver!(No symbol) [0x7ff645c68242]
+	chromedriver!(No symbol) [0x7ff645c81836]
+	chromedriver!(No symbol) [0x7ff645d25a74]
+	chromedriver!(No symbol) [0x7ff645cffe6a]
+	chromedriver!(No symbol) [0x7ff645d24c63]
+	chromedriver!(No symbol) [0x7ff645cc9d58]
+	chromedriver!(No symbol) [0x7ff645ccac43]
+	chromedriver!GetHandleVerifier [0x7ff64622dab9+3149c9]
+	chromedriver!GetHandleVerifier [0x7ff64622802b+30ef3b]
+	chromedriver!GetHandleVerifier [0x7ff64624c872+333782]
+	chromedriver!GetHandleVerifier [0x7ff645f4b785+32695]
+	chromedriver!GetHandleVerifier [0x7ff645f542bc+3b1cc]
+	chromedriver!GetHandleVerifier [0x7ff645f37f24+1ee34]
+	chromedriver!GetHandleVerifier [0x7ff645f380b4+1efc4]
+	chromedriver!GetHandleVerifier [0x7ff645f1bf27+2e37]
+	KERNEL32!BaseThreadInitThunk [0x7ffa95c9259d+1d]
+	ntdll!RtlUserThreadStart [0x7ffa9772af78+28]
+</status>
 </kw>
 <kw name="Login With Valid Credentials" owner="login_keywords">
-<kw name="Input Username" owner="login_keywords">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${LOCATOR_USERNAME}</arg>
-<arg>${timeout}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-05-16T22:07:29.035996" elapsed="0.080779"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-05-16T22:07:29.117180" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
-<arg>${LOCATOR_USERNAME}</arg>
-<arg>${username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-05-16T22:07:29.116953" elapsed="0.062711"/>
-</kw>
-<arg>${VALID_USERNAME}</arg>
-<status status="PASS" start="2026-05-16T22:07:29.035745" elapsed="0.144033"/>
-</kw>
-<kw name="Input Password" owner="login_keywords">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${LOCATOR_PASSWORD}</arg>
-<arg>${timeout}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-05-16T22:07:29.180247" elapsed="0.010797"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-05-16T22:07:29.191547" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
-<arg>${LOCATOR_PASSWORD}</arg>
-<arg>${password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-05-16T22:07:29.191328" elapsed="0.045300"/>
-</kw>
-<arg>${VALID_PASSWORD}</arg>
-<status status="PASS" start="2026-05-16T22:07:29.179960" elapsed="0.056771"/>
-</kw>
-<kw name="Click Login Button" owner="login_keywords">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${LOCATOR_LOGIN_BUTTON}</arg>
-<arg>${timeout}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-05-16T22:07:29.237154" elapsed="0.011751"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-05-16T22:07:29.249270" level="INFO">Clicking button 'id=login-button'.</msg>
-<arg>${LOCATOR_LOGIN_BUTTON}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-05-16T22:07:29.249076" elapsed="0.074099"/>
-</kw>
-<status status="PASS" start="2026-05-16T22:07:29.236911" elapsed="0.086362"/>
-</kw>
-<status status="PASS" start="2026-05-16T22:07:29.035481" elapsed="0.287843"/>
+<status status="NOT RUN" start="2026-05-17T09:52:42.507087" elapsed="0.000041"/>
 </kw>
 <kw name="Select Product" owner="products_keywords">
-<kw name="Click Product Button" owner="products_keywords">
-<for flavor="IN">
-<iter>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${product}</arg>
-<arg>${timeout}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-05-16T22:07:29.324539" elapsed="0.012545"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-05-16T22:07:29.337451" level="INFO">Clicking button 'id=add-to-cart-sauce-labs-backpack'.</msg>
-<arg>${product}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-05-16T22:07:29.337259" elapsed="0.044395"/>
-</kw>
-<var name="${product}">id=add-to-cart-sauce-labs-backpack</var>
-<status status="PASS" start="2026-05-16T22:07:29.324429" elapsed="0.057297"/>
-</iter>
-<iter>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${product}</arg>
-<arg>${timeout}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-05-16T22:07:29.381990" elapsed="0.010846"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-05-16T22:07:29.393202" level="INFO">Clicking button 'id=add-to-cart-sauce-labs-bike-light'.</msg>
-<arg>${product}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-05-16T22:07:29.393012" elapsed="0.035386"/>
-</kw>
-<var name="${product}">id=add-to-cart-sauce-labs-bike-light</var>
-<status status="PASS" start="2026-05-16T22:07:29.381862" elapsed="0.046608"/>
-</iter>
-<var>${product}</var>
-<value>@{products}</value>
-<status status="PASS" start="2026-05-16T22:07:29.324277" elapsed="0.104246"/>
-</for>
-<arg>@{ฺฺBTN_ADD_TO_CART}</arg>
-<status status="PASS" start="2026-05-16T22:07:29.324021" elapsed="0.104585"/>
-</kw>
-<status status="PASS" start="2026-05-16T22:07:29.323686" elapsed="0.104975"/>
+<status status="NOT RUN" start="2026-05-17T09:52:42.507331" elapsed="0.000033"/>
 </kw>
 <kw name="Review Cart" owner="cart_keywords">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${CART_ICON}</arg>
-<arg>${timeout}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-05-16T22:07:29.429170" elapsed="0.009933"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-05-16T22:07:29.439462" level="INFO">Clicking element 'id=shopping_cart_container'.</msg>
-<arg>${CART_ICON}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-05-16T22:07:29.439275" elapsed="0.037162"/>
-</kw>
-<status status="PASS" start="2026-05-16T22:07:29.428926" elapsed="0.047615"/>
+<status status="NOT RUN" start="2026-05-17T09:52:42.507556" elapsed="0.000032"/>
 </kw>
 <kw name="Checkout" owner="checkout_keywords">
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-05-16T22:07:29.477531" level="INFO">Clicking element 'id=checkout'.</msg>
-<arg>${CHECKOUT_BUTTON}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-05-16T22:07:29.477301" elapsed="0.039174"/>
-</kw>
-<status status="PASS" start="2026-05-16T22:07:29.476949" elapsed="0.039709"/>
+<status status="NOT RUN" start="2026-05-17T09:52:42.507754" elapsed="0.000025"/>
 </kw>
 <kw name="Input Checkout Information" owner="checkout_keywords">
-<kw name="Input First Name" owner="checkout_keywords">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${LOCATOR_FIRST_NAME_FIELD}</arg>
-<arg>${timeout}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-05-16T22:07:29.517533" elapsed="0.009868"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-05-16T22:07:29.527779" level="INFO">Typing text 'John' into text field 'id=first-name'.</msg>
-<arg>${LOCATOR_FIRST_NAME_FIELD}</arg>
-<arg>${first_name}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-05-16T22:07:29.527568" elapsed="0.042473"/>
-</kw>
-<arg>${FIRST_NAME}</arg>
-<status status="PASS" start="2026-05-16T22:07:29.517273" elapsed="0.052863"/>
-</kw>
-<kw name="Input Last Name" owner="checkout_keywords">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${LOCATOR_LAST_NAME_FIELD}</arg>
-<arg>${timeout}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-05-16T22:07:29.570592" elapsed="0.010011"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-05-16T22:07:29.580973" level="INFO">Typing text 'Doe' into text field 'id=last-name'.</msg>
-<arg>${LOCATOR_LAST_NAME_FIELD}</arg>
-<arg>${last_name}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-05-16T22:07:29.580769" elapsed="0.038618"/>
-</kw>
-<arg>${LAST_NAME}</arg>
-<status status="PASS" start="2026-05-16T22:07:29.570313" elapsed="0.049174"/>
-</kw>
-<kw name="Input Postal Code" owner="checkout_keywords">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${LOCATOR_POSTAL_CODE_FIELD}</arg>
-<arg>${timeout}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-05-16T22:07:29.619953" elapsed="0.010495"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-05-16T22:07:29.630849" level="INFO">Typing text '12345' into text field 'id=postal-code'.</msg>
-<arg>${LOCATOR_POSTAL_CODE_FIELD}</arg>
-<arg>${postal_code}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-05-16T22:07:29.630627" elapsed="0.041643"/>
-</kw>
-<arg>${ZIP_CODE}</arg>
-<status status="PASS" start="2026-05-16T22:07:29.619669" elapsed="0.052700"/>
-</kw>
-<kw name="Click Continue Button" owner="checkout_keywords">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${LOCATOR_CONTINUE_BUTTON}</arg>
-<arg>${timeout}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-05-16T22:07:29.672780" elapsed="0.009882"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-05-16T22:07:29.683029" level="INFO">Clicking button 'id=continue'.</msg>
-<arg>${LOCATOR_CONTINUE_BUTTON}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-05-16T22:07:29.682829" elapsed="0.043664"/>
-</kw>
-<status status="PASS" start="2026-05-16T22:07:29.672545" elapsed="0.054046"/>
-</kw>
-<status status="PASS" start="2026-05-16T22:07:29.516988" elapsed="0.209653"/>
+<status status="NOT RUN" start="2026-05-17T09:52:42.507936" elapsed="0.000033"/>
 </kw>
 <kw name="Verify Product Information" owner="verify_pricing_keywords">
-<kw name="Verify Product1" owner="verify_pricing_keywords">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${PRODUCT1_NAME}</arg>
-<arg>${timeout}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-05-16T22:07:29.727470" elapsed="0.010035"/>
-</kw>
-<kw name="Element Should Contain" owner="SeleniumLibrary">
-<msg time="2026-05-16T22:07:29.748596" level="INFO">Element 'xpath=(//div[@class='inventory_item_name'])[1]' contains text 'Sauce Labs Backpack'.</msg>
-<arg>${PRODUCT1_NAME}</arg>
-<arg>${product_name}</arg>
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="PASS" start="2026-05-16T22:07:29.737673" elapsed="0.011007"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${PRODUCT1_DESC}</arg>
-<arg>${timeout}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-05-16T22:07:29.748837" elapsed="0.009947"/>
-</kw>
-<kw name="Element Should Contain" owner="SeleniumLibrary">
-<msg time="2026-05-16T22:07:29.766493" level="INFO">Element 'xpath=(//div[@class='inventory_item_desc'])[1]' contains text 'carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.'.</msg>
-<arg>${PRODUCT1_DESC}</arg>
-<arg>${product_desc}</arg>
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="PASS" start="2026-05-16T22:07:29.758953" elapsed="0.007611"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${PRODUCT1_PRICE}</arg>
-<arg>${timeout}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-05-16T22:07:29.766717" elapsed="0.009096"/>
-</kw>
-<kw name="Element Should Contain" owner="SeleniumLibrary">
-<msg time="2026-05-16T22:07:29.783979" level="INFO">Element 'xpath=(//div[@class='inventory_item_price'])[1]' contains text '$29.99'.</msg>
-<arg>${PRODUCT1_PRICE}</arg>
-<arg>${product_price}</arg>
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="PASS" start="2026-05-16T22:07:29.775966" elapsed="0.008092"/>
-</kw>
-<arg>${PRODUCT_NAME_1}</arg>
-<arg>${PRODUCT_DESC_1}</arg>
-<arg>${PRODUCT_PRICE_1}</arg>
-<status status="PASS" start="2026-05-16T22:07:29.727164" elapsed="0.056975"/>
-</kw>
-<kw name="Verify Product2" owner="verify_pricing_keywords">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${PRODUCT2_NAME}</arg>
-<arg>${timeout}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-05-16T22:07:29.784656" elapsed="0.009135"/>
-</kw>
-<kw name="Element Should Contain" owner="SeleniumLibrary">
-<msg time="2026-05-16T22:07:29.801243" level="INFO">Element 'xpath=(//div[@class='inventory_item_name'])[2]' contains text 'Sauce Labs Bike Light'.</msg>
-<arg>${PRODUCT2_NAME}</arg>
-<arg>${product_name}</arg>
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="PASS" start="2026-05-16T22:07:29.793941" elapsed="0.007363"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${PRODUCT2_DESC}</arg>
-<arg>${timeout}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-05-16T22:07:29.801434" elapsed="0.008851"/>
-</kw>
-<kw name="Element Should Contain" owner="SeleniumLibrary">
-<msg time="2026-05-16T22:07:29.817514" level="INFO">Element 'xpath=(//div[@class='inventory_item_desc'])[2]' contains text 'A red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included.'.</msg>
-<arg>${PRODUCT2_DESC}</arg>
-<arg>${product_desc}</arg>
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="PASS" start="2026-05-16T22:07:29.810433" elapsed="0.007143"/>
-</kw>
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${PRODUCT2_PRICE}</arg>
-<arg>${timeout}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-05-16T22:07:29.817704" elapsed="0.009128"/>
-</kw>
-<kw name="Element Should Contain" owner="SeleniumLibrary">
-<msg time="2026-05-16T22:07:29.834211" level="INFO">Element 'xpath=(//div[@class='inventory_item_price'])[2]' contains text '$9.99'.</msg>
-<arg>${PRODUCT2_PRICE}</arg>
-<arg>${product_price}</arg>
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="PASS" start="2026-05-16T22:07:29.826985" elapsed="0.007287"/>
-</kw>
-<arg>${PRODUCT_NAME_2}</arg>
-<arg>${PRODUCT_DESC_2}</arg>
-<arg>${PRODUCT_PRICE_2}</arg>
-<status status="PASS" start="2026-05-16T22:07:29.784323" elapsed="0.050020"/>
-</kw>
-<status status="PASS" start="2026-05-16T22:07:29.726910" elapsed="0.107490"/>
+<status status="NOT RUN" start="2026-05-17T09:52:42.508206" elapsed="0.000036"/>
 </kw>
 <kw name="Completed Order" owner="complete_order_keywords">
-<kw name="Click Button Finish" owner="complete_order_keywords">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${FINISH_ORDER_BUTTON}</arg>
-<arg>${timeout}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-05-16T22:07:29.835071" elapsed="0.010143"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-05-16T22:07:29.845568" level="INFO">Clicking element 'id=finish'.</msg>
-<arg>${FINISH_ORDER_BUTTON}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-05-16T22:07:29.845383" elapsed="0.032734"/>
-</kw>
-<status status="PASS" start="2026-05-16T22:07:29.834873" elapsed="0.043346"/>
-</kw>
-<kw name="Click Button Back To Products" owner="complete_order_keywords">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${BACK_TO_PRODUCTS_BUTTON}</arg>
-<arg>${timeout}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-05-16T22:07:29.878644" elapsed="0.009892"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-05-16T22:07:29.888974" level="INFO">Clicking element 'id=back-to-products'.</msg>
-<arg>${BACK_TO_PRODUCTS_BUTTON}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-05-16T22:07:29.888785" elapsed="0.034931"/>
-</kw>
-<status status="PASS" start="2026-05-16T22:07:29.878403" elapsed="0.045414"/>
-</kw>
-<status status="PASS" start="2026-05-16T22:07:29.834634" elapsed="0.089233"/>
+<status status="NOT RUN" start="2026-05-17T09:52:42.508535" elapsed="0.000039"/>
 </kw>
 <kw name="Logout" owner="logout_keywords">
-<kw name="Click Burger Menu" owner="logout_keywords">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${BURGER_MENU_BUTTON}</arg>
-<arg>timeout=${timeout}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-05-16T22:07:29.924676" elapsed="0.012615"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-05-16T22:07:29.937704" level="INFO">Clicking element 'id=react-burger-menu-btn'.</msg>
-<arg>${BURGER_MENU_BUTTON}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-05-16T22:07:29.937501" elapsed="0.032950"/>
-</kw>
-<status status="PASS" start="2026-05-16T22:07:29.924443" elapsed="0.046105"/>
-</kw>
-<kw name="Click Logout Button" owner="logout_keywords">
-<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<arg>${LOGOUT_BUTTON}</arg>
-<arg>timeout=${timeout}</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-05-16T22:07:29.970948" elapsed="0.216779"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-05-16T22:07:30.188079" level="INFO">Clicking element 'id=logout_sidebar_link'.</msg>
-<arg>${LOGOUT_BUTTON}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-05-16T22:07:30.187892" elapsed="0.045288"/>
-</kw>
-<status status="PASS" start="2026-05-16T22:07:29.970716" elapsed="0.262561"/>
-</kw>
-<status status="PASS" start="2026-05-16T22:07:29.924130" elapsed="0.309198"/>
+<status status="NOT RUN" start="2026-05-17T09:52:42.508854" elapsed="0.000146"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-05-16T22:07:30.233689" elapsed="2.106127"/>
+<status status="NOT RUN" start="2026-05-17T09:52:42.509271" elapsed="0.000029"/>
 </kw>
 <doc>This test case verifies that a user can place an order successfully.</doc>
-<status status="PASS" start="2026-05-16T22:07:27.066335" elapsed="5.273783"/>
+<status status="FAIL" start="2026-05-17T09:52:39.473076" elapsed="3.036432">WebDriverException: Message: unknown error: net::ERR_INTERNET_DISCONNECTED
+  (Session info: chrome=148.0.7778.168)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff646201e35+2e8d45]
+	chromedriver!GetHandleVerifier [0x7ff645f2e6c0+155d0]
+	chromedriver!(No symbol) [0x7ff645c7d57d]
+	chromedriver!(No symbol) [0x7ff645c7a0a4]
+	chromedriver!(No symbol) [0x7ff645c6a491]
+	chromedriver!(No symbol) [0x7ff645c6c37f]
+	chromedriver!(No symbol) [0x7ff645c6aa33]
+	chromedriver!(No symbol) [0x7ff645c6a1fb]
+	chromedriver!(No symbol) [0x7ff645c69eb1]
+	chromedriver!(No symbol) [0x7ff645c67afb]
+	chromedriver!(No symbol) [0x7ff645c68242]
+	chromedriver!(No symbol) [0x7ff645c81836]
+	chromedriver!(No symbol) [0x7ff645d25a74]
+	chromedriver!(No symbol) [0x7ff645cffe6a]
+	chromedriver!(No symbol) [0x7ff645d24c63]
+	chromedriver!(No symbol) [0x7ff645cc9d58]
+	chromedriver!(No symbol) [0x7ff645ccac43]
+	chromedriver!GetHandleVerifier [0x7ff64622dab9+3149c9]
+	chromedriver!GetHandleVerifier [0x7ff64622802b+30ef3b]
+	chromedriver!GetHandleVerifier [0x7ff64624c872+333782]
+	chromedriver!GetHandleVerifier [0x7ff645f4b785+32695]
+	chromedriver!GetHandleVerifier [0x7ff645f542bc+3b1cc]
+	chromedriver!GetHandleVerifier [0x7ff645f37f24+1ee34]
+	chromedriver!GetHandleVerifier [0x7ff645f380b4+1efc4]
+	chromedriver!GetHandleVerifier [0x7ff645f1bf27+2e37]
+	KERNEL32!BaseThreadInitThunk [0x7ffa95c9259d+1d]
+	ntdll!RtlUserThreadStart [0x7ffa9772af78+28]
+</status>
 </test>
-<status status="PASS" start="2026-05-16T22:07:26.716572" elapsed="5.624072"/>
+<status status="FAIL" start="2026-05-17T09:52:39.179653" elapsed="3.330470"/>
 </suite>
-<status status="PASS" start="2026-05-16T22:07:26.687893" elapsed="5.653410"/>
+<status status="FAIL" start="2026-05-17T09:52:39.148162" elapsed="3.362525"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Tests" id="s1" pass="1" fail="0" skip="0">Tests</stat>
-<stat name="Tc Order Successfully" id="s1-s1" pass="1" fail="0" skip="0">Tests.Tc Order Successfully</stat>
+<stat name="Tests" id="s1" pass="0" fail="1" skip="0">Tests</stat>
+<stat name="Saucedemo" id="s1-s1" pass="0" fail="1" skip="0">Tests.Saucedemo</stat>
 </suite>
 </statistics>
 <errors>
+<msg time="2026-05-17T09:52:39.870778" level="WARN">There was an error managing chromedriver (error sending request for url (https://googlechromelabs.github.io/chrome-for-testing/known-good-versions-with-downloads.json)); using driver found in the cache</msg>
+<msg time="2026-05-17T09:52:39.871121" level="WARN">Error sending stats to Plausible: error sending request for url (https://plausible.io/api/event)</msg>
 </errors>
 </robot>
