@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/Siriwatpit07/E2E-Test-Automation---Robot-Framework.git'
-            }
-        }
-
         stage('Install Dependencies') {
             steps {
                 bat 'pip install -r requirements.txt'
@@ -17,9 +11,20 @@ pipeline {
 
         stage('Run Robot Tests') {
             steps {
-                bat 'py -m robot -d results tests/'
+                bat 'python -m robot -d results tests/'
             }
         }
 
+    }
+
+    post {
+
+        always {
+
+            robot outputPath: 'results'
+
+            archiveArtifacts artifacts: 'results/*'
+
+        }
     }
 }
