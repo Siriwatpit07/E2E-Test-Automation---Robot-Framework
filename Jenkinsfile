@@ -21,10 +21,14 @@ pipeline {
 
         always {
 
-            robot outputPath: 'results'
+            robot(
+                outputPath: 'results',
+                outputFileName: 'output.xml',
+                reportFileName: 'report.html',
+                logFileName: 'log.html'
+            )
 
             archiveArtifacts artifacts: 'results/*'
-
         }
     }
 }
